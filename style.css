@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #0d1117;
+    color: #58a6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.terminal-container {
+    width: 90%;
+    max-width: 650px;
+    background: #161b22;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 255, 136, 0.2);
+    border: 1px solid #30363d;
+    overflow: hidden;
+}
+
+.terminal-header {
+    background: #21262d;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+.title {
+    color: #8b949e;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.terminal-body {
+    padding: 20px;
+}
+
+.prompt {
+    color: #2ea043;
+    font-weight: bold;
+}
+
+.command {
+    color: #c9d1d9;
+    margin-bottom: 15px;
+}
+
+.output {
+    color: #7ee787;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    white-space: pre-line;
+}
+
+.wish-btn {
+    background: #238636;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.wish-btn:hover {
+    background: #2ea043;
+    box-shadow: 0 0 10px #2ea043;
+}
+
+.hidden-message {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.hidden-message h1 {
+    color: #58a6ff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.hidden-message p {
+    color: #8b949e;
+    font-style: italic;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}

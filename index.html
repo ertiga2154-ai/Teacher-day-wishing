@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Teacher's Day, Sir!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <span class="btn red"></span>
+            <span class="btn yellow"></span>
+            <span class="btn green"></span>
+            <span class="title">teachers_day_wish.py</span>
+        </div>
+        <div class="terminal-body">
+            <p class="command"><span class="prompt">$</span> python teachers_day_wish.py</p>
+            <div id="output" class="output"></div>
+            <button id="wishBtn" class="wish-btn" onclick="celebrate()">click_to_compile()</button>
+            <div id="finalMessage" class="hidden-message">
+                <h1>🎉 Happy Teacher's Day, Sir! 🎉</h1>
+                <p>"Thank you for teaching us not just how to code, but how to debug life's challenges!"</p>
+            </div>
+        </div>
+    </div>
+    <canvas id="confetti"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
